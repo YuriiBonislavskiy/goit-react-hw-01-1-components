@@ -1,30 +1,36 @@
 import PropTypes from 'prop-types';
-import css from './TransactionHistory.module.css';
 import { capitalize } from 'utils';
+import {
+  TransactionsContainer,
+  TransactionsTitle,
+  TransactionsHistoryTable,
+  TransactionsTableHeaderRow,
+  TransactionsTableBodyRow,
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ title, transactions }) => {
   return (
-    <section className={css.transactionsContainer}>
-      {title && <h2 className={css.title}>{title}</h2>}
-      <table className={css.transactionHistory}>
+    <TransactionsContainer>
+      {title && <TransactionsTitle>{title}</TransactionsTitle>}
+      <TransactionsHistoryTable>
         <thead>
-          <tr>
+          <TransactionsTableHeaderRow>
             <th>Type</th>
             <th>Amount</th>
             <th>Currency</th>
-          </tr>
+          </TransactionsTableHeaderRow>
         </thead>
         <tbody>
           {transactions.map(({ id, type, amount, currency }, index) => (
-            <tr key={id} style={{ background: index % 2 && 'white' }}>
+            <TransactionsTableBodyRow  $rowNumber={index} key={id}>
               <td>{capitalize(type, ', ')}</td>
               <td>{amount}</td>
               <td>{currency}</td>
-            </tr>
+            </TransactionsTableBodyRow>
           ))}
         </tbody>
-      </table>
-    </section>
+      </TransactionsHistoryTable>
+    </TransactionsContainer>
   );
 };
 

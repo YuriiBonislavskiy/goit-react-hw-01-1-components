@@ -12,7 +12,7 @@ import {
   UserItem,
   UserLabel,
   UserQuantity,
-} from './User.stiled';
+} from './User.styled';
 
 export const User = ({
   username,

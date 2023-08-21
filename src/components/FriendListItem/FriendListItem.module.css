@@ -1,21 +1,15 @@
 .item {
     display: flex;
     box-sizing: border-box;
-    /* width: 23.5vw; */
     width: 180px;
-    /* min-width: 180px; */
     height: 60px;
     display: flex;
-    /* justify-content: left; */
     text-align: left;
     align-items: center;
-    /* flex-direction: column; */
     border-width: 1px 1px;
     border-style: solid;
     border-color: #1f1f20;
     padding-left: 8px;
-    /* text-align: center; */
-    /* justify-content: center; */
     margin-left: 5px;
     margin-bottom: 5px;
 }
