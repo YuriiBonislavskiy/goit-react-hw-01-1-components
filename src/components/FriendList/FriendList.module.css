@@ -1,0 +1,37 @@
+.friendsContainer {
+    width: auto;
+    max-width: 48vw;
+    min-width: 270px;
+    /* max-width: 320px; */
+    background-color: #e8ebf1;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    color: #1f1f1f;
+    margin-bottom: 12px;
+}
+
+.friendlist {
+    padding: 0px;
+    margin: 0px;
+    /* margin-top: 30px; */
+    width: 30vw;
+    /* min-width: 270px; */
+    min-width: 200px;
+    /* max-width: 270px; */
+    /* background-color: rgb(232, 235, 241); */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
