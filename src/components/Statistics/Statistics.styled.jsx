@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { getRandomHexColor } from 'utils';
+import { getRandomHexColor, themes } from 'utils';
 
 export const StatisticsContainer = styled.section`
   width: 30vw;
   min-width: 270px;
   max-width: 620px;
-  background-color: #e8ebf1;
+  background-color: ${themes.color.color6};
   padding: 30px;
   text-align: center;
   align-items: center;
@@ -15,7 +15,7 @@ export const StatisticsTitle = styled.h2`
   padding: 0px;
   margin: 0px;
   font-size: 18px;
-  color: #1f1f1f;
+  color: ${themes.color.color3};
   margin-bottom: 12px;
 `;
 
@@ -37,23 +37,23 @@ export const StatisticsItem = styled.li`
   flex-direction: column;
   border-width: 1px 1px;
   border-style: solid;
-  border-color: #e6eaf1;
+  border-color: ${themes.color.color8};
   text-align: center;
   justify-content: center;
   background-color: ${getRandomHexColor};
 `;
 
 export const StatisticsLabel = styled.span`
-padding: 0px;
-margin: 0px;
-font-size: 14px;
-color: #020202;
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  color: ${themes.color.color7};
 `;
 
 export const StatisticsPercentage = styled.span`
-padding: 0px;
-margin: 0px;
-font-size: 14px;
-color: #020202;
-margin: 4px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  color: ${themes.color.color7};
+  margin: 4px;
 `;

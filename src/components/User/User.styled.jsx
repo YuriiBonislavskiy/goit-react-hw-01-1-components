@@ -1,9 +1,10 @@
 // import styled from '@emotion/styled';
 import styled from 'styled-components';
+import { themes } from 'utils';
 
 export const UserContainer = styled.div`
   width: auto;
-  background-color: rgb(232, 235, 241);
+  background-color: ${themes.color.color6};
   padding: 30px;
   text-align: center;
   align-items: center;
@@ -15,14 +16,14 @@ export const UserDescription = styled.div`
   width: 21vw;
   min-width: 270px;
   max-width: 300px;
-  background-color: white;
+  background-color: ${themes.color.color9};
   padding: 20px;
 `;
 
 export const UserAvatar = styled.img`
   width: 150px;
   border-radius: 50%;
-  background-color: #a48d77;
+  background-color: ${themes.color.color11};
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
@@ -32,7 +33,7 @@ export const UserName = styled.p`
   padding: 0px;
   margin: 0px;
   font-size: 18px;
-  color: #1f1f1f;
+  color: ${themes.color.color3};
   margin: 12px;
 `;
 
@@ -41,14 +42,14 @@ export const UserTag = styled.p`
   margin: 0px;
   font-size: 18px;
   font-size: 14px;
-  color: #1f1f1f;
+  color: ${themes.color.color3};
 `;
 
 export const UserLocation = styled.p`
   padding: 0px;
   margin: 0px;
   font-size: 14px;
-  color: #7d8797;
+  color: ${themes.color.color10};
   margin: 12px;
 `;
 
@@ -69,22 +70,22 @@ export const UserItem = styled.li`
   flex-direction: column;
   border-width: 2px 1px;
   border-style: solid;
-  border-color: #e6eaf1;
+  border-color: ${themes.color.color8};
   text-align: center;
   justify-content: center;
-  background-color: #f4f6f9;
+  background-color: ${themes.color.color12};
 `;
 
 export const UserLabel = styled.span`
   padding: 0px;
   margin: 0px;
   font-size: 14px;
-  color: #7d8797;
+  color: ${themes.color.color10};
 `;
 
 export const UserQuantity = styled.span`
   padding: 0px;
   margin: 0px;
   font-size: 18px;
-  color: #1f1f1f;
+  color: ${themes.color.color3};
 `;

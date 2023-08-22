@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { themes } from 'utils';
 
 export const FriendItem = styled.li`
   display: flex;
@@ -10,40 +11,40 @@ export const FriendItem = styled.li`
   align-items: center;
   border-width: 1px 1px;
   border-style: solid;
-  border-color: #1f1f20;
+  border-color: ${themes.color.color1};
   padding-left: 8px;
   margin-left: 5px;
   margin-bottom: 5px;
 `;
 
-const setBgColor = ({$isOnlineColor}) => {
-    // console.log(props.rowNumber);
-    return $isOnlineColor ? 'green' : 'red';
-}
+const setBgColor = ({ $isOnlineColor }) => {
+  // console.log(props.rowNumber);
+  return $isOnlineColor ? themes.color.color5 : themes.color.color4;
+};
 
 export const FriendStatus = styled.span`
-padding: 0px;
-margin: 0px;
-border-radius: 50%;
-font-size: 14px;
-height: 15px;
-width: 15px;
-background-color: ${setBgColor};
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  font-size: 14px;
+  height: 15px;
+  width: 15px;
+  background-color: ${setBgColor};
 `;
 
 export const FriendAvatar = styled.img`
-display: block;
-width: 48px;
-height: 48px;
-border-radius: 10%;
-background-color: #ded4cb;
-margin-left: 8px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 10%;
+  background-color: ${themes.color.color2};
+  margin-left: 8px;
 `;
 
 export const FriendName = styled.span`
-padding: 0px;
-margin: 0px;
-font-size: 18px;
-color: #1f1f1f;
-margin-left: 8px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  color: ${themes.color.color3};
+  margin-left: 8px;
 `;
